@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "es5", // Set the target ECMAScript version
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ], // Include necessary libraries
+    "allowJs": true, // Allow JavaScript files
+    "skipLibCheck": true, // Skip type checking of all declaration files
+    "esModuleInterop": true, // Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects
+    "allowSyntheticDefaultImports": true, // Allow default imports from modules with no default export
+    "strict": true, // Enable all strict type-checking options
+    "forceConsistentCasingInFileNames": true, // Disallow inconsistently-cased references to the same file
+    "noFallthroughCasesInSwitch": true, // Report errors for fallthrough cases in switch statements
+    "module": "esnext", // Specify module code generation
+    "moduleResolution": "node", // Use Node.js style module resolution
+    "resolveJsonModule": true, // Include modules imported with .json extension
+    "isolatedModules": true, // Ensure that each file can be safely transpiled without depending on other imports
+    "noEmit": true, // Do not emit outputs
+    "jsx": "preserve" // Enable the new JSX transform (use "react" if using React 16 or earlier)
+    ,
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "src" // Include all files in the src directory
+    ,
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
