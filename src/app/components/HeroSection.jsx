@@ -32,6 +32,7 @@ const HeroSection = () => {
       duration: 2, 
       ease: 'power1.inOut'
     })
+
     gsap.to('#star', {
       scale: 0.75, 
       repeat: -1, 
@@ -39,10 +40,17 @@ const HeroSection = () => {
       duration: 2, 
       ease: 'power1.inOut'
     })
+
+    gsap.to('#my_photo', {
+      x: "-50%",
+      opacity: 1,
+      duration: 2,
+      ease: 'power1.inOut'
+    })
   }, [])
   
   return (
-    <section className="max-md:pb-44">
+    <section className="max-md:pb-44 pb-12">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div
           id="hero_text"
@@ -100,9 +108,10 @@ const HeroSection = () => {
           <div className="rounded-full bg-background w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative ">
               <div className="h-[470px] w-[300px] max-md:hidden bg-transparent -translate-y-7 translate-x-8 border-primary-300 rounded-full border-4"></div>
               <Image
+                id="my_photo"
                 src="/images/portfolioImg.jpg"
                 alt="hero image"
-                className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full "
+                className="absolute transform -translate-y-1/2 top-1/2 left-1/2 rounded-full opacity-0"
                 width={300}
                 height={300}
               />

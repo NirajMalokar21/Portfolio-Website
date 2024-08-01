@@ -92,7 +92,7 @@ const Contact: FC = () => {
                 ></textarea>
             </div>
             <div>
-                <button className='hover:shadow-form w-full rounded-md bg-primary-500 py-3 px-8 mt-4 text-base font-semibold text-black outline-none'>
+                <button className='hover:shadow-form w-full rounded-md bg-primary-500 py-3 px-8 mt-4 text-base font-semibold text-white outline-none'>
                 Submit
                 </button>
             </div>
