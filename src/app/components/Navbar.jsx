@@ -24,13 +24,13 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed mx-auto  top-0 left-0 right-0 z-20 bg-[#fefae0] bg-opacity-100 px-11">
+    <nav className="fixed mx-auto top-0 left-0 right-0 z-20 bg-primary-600 bg-opacity-100 px-11">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={"/"}
-          className="text-2xl md:text-5xl text-black font-semibold"
+          className="text-2xl md:text-5xl text-white font-semibold"
         >
-          LOGO
+          NiDev
         </Link>
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (

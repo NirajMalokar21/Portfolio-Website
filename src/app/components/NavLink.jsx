@@ -4,9 +4,9 @@ const NavLink = ({ href, title }) => {
   return (
     <Link
       href={href}
-      className="block font-semibold py-2 pl-3 pr-4 text-[#161718] sm:text-xl rounded md:p-0 hover:text-primary"
+      className="block font-semibold py-2 pl-3 pr-4 sm:text-xl text-white rounded md:p-0 hover:text-slate-900"
     >
-      {title}
+      <p>{title}</p>
     </Link>
   );
 };
