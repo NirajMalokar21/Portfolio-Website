@@ -20,22 +20,24 @@ const HeroSection = () => {
               Hello, I&apos;m{" "}
             </span>
             <br></br>
-            <TypeAnimation
-              sequence={[
-                "Niraj",
-                1000,
-                "Web Developer",
-                1000,
-              ]}
-              wrapper="span"
-              speed={50}
-              repeat={Infinity}
-            />
+            Niraj
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
-          </p>
+          <h2 className="text-white mb-4 text-xl sm:text-2xl lg:text-4xl lg:leading-normal font-extrabold">
+            <TypeAnimation
+                sequence={[
+                  "Web Developer",
+                  1000,
+                  "3rd Year C.S Student",
+                  1000,
+                ]}
+                wrapper="span"
+                speed={50}
+                repeat={Infinity}
+              />
+            </h2>
+          {/* <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
+            A passionate student specializing in web development with a portfolio of diverse projects.
+          </p> */}
           <div>
             <Link
               href="/#contact"

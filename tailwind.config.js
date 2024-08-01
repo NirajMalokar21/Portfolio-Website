@@ -16,8 +16,11 @@ module.exports = {
     },
     colors: {
       ...colors,
-      primary: colors.purple,
-      secondary: colors.pink,
+      background: '#fefae0',
+      primary: '#739b46',
+      secondary: '#BC6C25',
+      primary_light: '#606c38',
+      secondary_light: '#dda15e'
     },
   },
   plugins: [],
