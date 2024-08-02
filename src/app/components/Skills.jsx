@@ -65,9 +65,10 @@ const Skills = () => {
       },
     })
   }, [])
+//   bg-[#FFC2CA]
 
   return (
-    <div className="flex flex-col justify-start items-center bg-primary-200 w-full h-full rounded-2xl max-lg:hidden">
+    <div className="flex flex-col justify-start items-center bg-[#D8D8E9] w-full h-full rounded-2xl max-lg:hidden">
         <h2 className="text-4xl font-bold mb-4 py-4">Skills</h2>
         <div className='flex flex-wrap gap-16 items-center justify-evenly px-8 '>
             {skillsArray.map((skill, i) => (

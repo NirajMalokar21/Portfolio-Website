@@ -50,7 +50,7 @@ const HeroSection = () => {
   }, [])
   
   return (
-    <section className="max-md:pb-44 pb-12">
+    <section className="max-md:pb-44 pb-4">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div
           id="hero_text"
@@ -84,14 +84,15 @@ const HeroSection = () => {
             >
               <p className="font-bold">Hire Me</p>
             </Link>
-            <Link
-              href="/"
+            <a
+              href="/resume_niraj_m.pdf"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-primary_light hover:bg-slate-800 text-white mt-3"
+              download='resume_niraj_m'
             >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2 max-sm:pb-12">
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
                 <p className="font-bold">Download CV</p>
               </span>
-            </Link>
+            </a>
           </div>
           <Image 
             id="squiggle"

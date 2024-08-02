@@ -14,7 +14,7 @@ const TAB_DATA = [
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2 font-medium">
         <li>React</li>
         <li>NextJS</li>
         <li>MongoDB</li>
@@ -28,18 +28,22 @@ const TAB_DATA = [
     title: "Education",
     id: "education",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2 font-medium">
         <li>3rd Year Computer Science Student</li>
         <li>Carleton Unversity, Ottawa</li>
+        <li>GPA: 11.25/12.00</li>
       </ul>
     ),
   },
   {
-    title: "Certifications",
-    id: "certifications",
+    title: "Details",
+    id: "details",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Certified in noth</li>
+      <ul className="list-disc pl-2 font-medium">
+        <li>Email: <span className="underline text-blue-500">nirajharshavardhanma@cmail.carleton.ca</span></li>
+        <li>Employment: Open</li>
+        <li>Availability: May, 2025 - December, 2025</li>
+        <li>Looking for internship opportunities</li>
       </ul>
     ),
   },
@@ -61,6 +65,13 @@ const AboutSection = () => {
         once: true
       },
     })
+    gsap.to('#about2', {
+      y: "-80",
+      yoyo: true,
+      duration: 2,
+      repeat: -1,
+      ease: 'power1.inOut'
+    })
   }, [])
 
   const handleTabChange = (id) => {
@@ -70,7 +81,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-black" id="about">
+    <section className="text-black lg:pb-8" id="about">
       <div className="md:grid md:grid-cols-2 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Skills />
         <div id="about_me" className="mt-4 md:mt-0 text-left flex flex-col h-full pl-8 opacity-0 translate-x-1/4">
@@ -101,17 +112,28 @@ const AboutSection = () => {
               Education{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
+              selectTab={() => handleTabChange("details")}
+              active={tab === "details"}
             >
               {" "}
-              Certifications{" "}
+              Details{" "}
             </TabButton>
           </div>
+          
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
+          <div id="about2" className="hidden lg:flex -translate-y-24">
+            <Image            
+              src='/images/about-element-2.png'
+              alt="about-element-2"
+              width={60}
+              height={60}
+              className="translate-x-96"
+            />
         </div>
+        </div>
+        
       </div>
     </section>
   );
