@@ -50,7 +50,7 @@ const HeroSection = () => {
   }, [])
   
   return (
-    <section className="max-md:pb-44 pb-4">
+    <section className="max-md:pb-44 pb-4 pt-8">
       <div className="grid grid-cols-1 sm:grid-cols-12">
         <div
           id="hero_text"
