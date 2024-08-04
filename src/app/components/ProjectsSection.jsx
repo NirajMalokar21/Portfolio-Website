@@ -10,7 +10,7 @@ const projectsData = [
     title: "Dev Overflow Fullstack Website",
     description: "Responsive full stack stack overflow clone implementing auth, reputation, recommendation algorithm, global and local search. Technologies used: NextJS, Tailwind, MongoDB, Typescript",
     image: "/images/projects/devflow-tn.png",
-    tag: ["All", "Fullstack", "Mobile", ],
+    tag: ["All", "FullStack", "Responsive", ],
     gitUrl: "https://github.com/NirajMalokar21/stack_overflow_nextjs14",
     previewUrl: "https://stack-overflow-nextjs14-eta.vercel.app/",
   },
@@ -19,7 +19,7 @@ const projectsData = [
     title: "IPhone 15 Landing page",
     description: "Responsive front-end application using React and tailwind for design and GSAP for animations.",
     image: "/images/projects/iphone-tn.png",
-    tag: ["All", "Web", "Mobile"],
+    tag: ["All", "Responsive"],
     gitUrl: "https://github.com/NirajMalokar21/Apple-Iphone-Website",
     previewUrl: "https://apple-iphone-website-mu.vercel.app/",
   },
@@ -28,16 +28,16 @@ const projectsData = [
     title: "Modern Landing Page",
     description: "Responsive modern landing page created using NextJS, Tailwind and GSAP.",
     image: "/images/projects/travel-tn.png",
-    tag: ["All", "Front-end", "Web"],
+    tag: ["All", "Responsive"],
     gitUrl: "https://github.com/NirajMalokar21/travela-app",
-    previewUrl: "/",
+    previewUrl: "https://travela-app-tau.vercel.app/",
   },
   {
     id: 4,
     title: "E-Commerce website",
-    description: "Developed an E-Commerce website using the MERN stack, using multer for image storage, render and vercel for deployment. Implemented admin page and functionality to add and remove projects.",
+    description: "Developed an E-Commerce website using the MERN stack, using multer for image storage, render and vercel for deployment. Implemented admin page and admin functionality to add and remove items.",
     image: "/images/projects/ecomm-portfolio-tn.png",
-    tag: ["All", "Web", "Fullstack"],
+    tag: ["All", "FullStack"],
     gitUrl: "https://github.com/NirajMalokar21/E-Commerce-App",
     previewUrl: "https://e-commerce-app-three-psi.vercel.app/",
   },
@@ -47,7 +47,7 @@ const projectsData = [
     title: "Portfolio Website",
     description: "Responsive front-end Application showcasing my projects and skills created using NextJS, tailwind, GSAP, and Framer Motion.",
     image: "/images/projects/portfolio-tn.png",
-    tag: ["All", "Web"],
+    tag: ["All", "Responsive"],
     gitUrl: "https://github.com/NirajMalokar21/Portfolio-Website",
     previewUrl: "/",
   },
@@ -84,13 +84,13 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Web"
-          isSelected={tag === "Web"}
+          name="FullStack"
+          isSelected={tag === "FullStack"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="Responsive"
+          isSelected={tag === "Responsive"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
