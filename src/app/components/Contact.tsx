@@ -5,8 +5,7 @@ import { useForm } from 'react-hook-form';
 import { sendEmail } from '../utils/send-email';
 import Link from 'next/link';
 import Image from 'next/image';
-import GithubIcon from '../../../public/github-icon.svg'
-import LinkedinIcon from '../../../public/linkedin-icon.svg'
+
 
 export type FormData = {
   name: string;
@@ -39,10 +38,10 @@ const Contact: FC = () => {
             </p>
             <div className="socials flex flex-row gap-2">
             <Link href="github.com">
-                <Image src={GithubIcon} alt="Github Icon" className='invert' />
+                <Image src='/github-icon.svg' width={40} height={40} alt="Github Icon" className='invert' />
             </Link>
             <Link href="linkedin.com">
-                <Image src={LinkedinIcon} alt="Linkedin Icon" className='invert'/>
+                <Image src='/linkedin-icon.svg' width={40} height={40} alt="Linkedin Icon" className='invert'/>
             </Link>
             
             </div>
