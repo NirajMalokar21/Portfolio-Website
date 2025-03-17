@@ -51,6 +51,15 @@ const projectsData = [
     gitUrl: "https://github.com/NirajMalokar21/Portfolio-Website",
     previewUrl: "/",
   },
+  {
+    id: 6,
+    title: "Superstore data analysis",
+    description: "Data analysis and visualization of a superstore dataset using pandas, numpy, matplotlib, and seaborn deployed using streamlit",
+    image: "/images/projects/data-analysis-tn.png",
+    tag: ["All", "Data Analysis"],
+    gitUrl: "https://github.com/NirajMalokar21/superstore-data-analysis",
+    previewUrl: "https://superstore-data-analysis-htg5kyv8tzcn39bh75yw5h.streamlit.app/",
+  },
 ];
 
 const ProjectsSection = () => {
@@ -91,6 +100,11 @@ const ProjectsSection = () => {
           onClick={handleTagChange}
           name="Responsive"
           isSelected={tag === "Responsive"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Data Analysis"
+          isSelected={tag == "Data Analysis"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">

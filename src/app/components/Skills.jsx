@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 const skillsArray = [
     {
         name: "React",
-        image: '/images/reactimage.png'
+        image: '/images/reactImage.png'
     },
     {
         name: "Next.Js",
@@ -26,7 +26,11 @@ const skillsArray = [
     },
     {
         name: "MongoDB",
-        image: '/images/mongoIcon.png'
+        image: '/images/MongoIcon.png'
+    },
+    {
+        name: "SQL",
+        image: '/images/sqlImage.png'
     },
     {
         name: "GitHub",
@@ -42,11 +46,23 @@ const skillsArray = [
     },
     {
         name: "Typescript",
-        image: '/images/typescrImage.png'
+        image: '/images/typescriptImage.png'
     },
     {
         name: "GSAP",
         image: '/images/gsapImage.png'
+    },
+    {
+        name: "Pandas",
+        image: '/images/pandas.png'
+    },
+    {
+        name: "Numpy",
+        image: '/images/numpy.png'
+    },
+    {
+        name: "Jupyter",
+        image: '/images/jupyter.png'
     },
 ]
 
@@ -68,7 +84,7 @@ const Skills = () => {
 //   bg-[#FFC2CA]
 
   return (
-    <div className="flex flex-col justify-start items-center bg-[#D8D8E9] w-full h-full rounded-2xl max-lg:hidden">
+    <div className="flex flex-col justify-start items-center bg-[#b2b2db] w-full h-full rounded-2xl max-lg:hidden pb-4">
         <h2 className="text-4xl font-bold mb-4 py-4">Skills</h2>
         <div className='flex flex-wrap gap-16 items-center justify-evenly px-8 '>
             {skillsArray.map((skill, i) => (
