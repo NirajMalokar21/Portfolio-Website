@@ -67,9 +67,11 @@ const HeroSection = () => {
           <h2 className="text-black mb-4 text-xl pb-4 sm:text-2xl lg:text-4xl lg:leading-normal font-extrabold">
             <TypeAnimation
                 sequence={[
+                  "3rd Year C.S Student",
+                  1000,
                   "Web Developer",
                   1000,
-                  "3rd Year C.S Student",
+                  "AI/ML Student",
                   1000,
                 ]}
                 wrapper="span"
@@ -80,17 +82,17 @@ const HeroSection = () => {
           <div className="max-sm:pb-12">
             <Link
               href="/#contact"
-              className="px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-primary_light hover:bg-slate-200 text-white"
+              className="px-8 inline-block py-4 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-primary_light hover:bg-slate-200 text-white"
             >
               <p className="font-bold">Hire Me</p>
             </Link>
             <a
-              href="/resume_niraj_m.pdf"
+              href="/niraj_m_Fall25_resume.pdf"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-primary_light hover:bg-slate-800 text-white mt-3"
-              download='resume_niraj_m'
+              download='niraj_m_resume'
             >
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-                <p className="font-bold">Download CV</p>
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-7 py-3">
+                <p className="font-bold ">Download CV</p>
               </span>
             </a>
           </div>
@@ -110,7 +112,7 @@ const HeroSection = () => {
               <div className="h-[470px] w-[300px] max-md:hidden bg-transparent -translate-y-7 translate-x-8 border-primary-300 rounded-full border-4"></div>
               <Image
                 id="my_photo"
-                src="/images/portfolioImg.jpg"
+                src="/images/portfolioImg2.JPG"
                 alt="hero image"
                 className="absolute transform -translate-y-1/2 top-1/2 left-1/2 rounded-full opacity-0"
                 width={300}

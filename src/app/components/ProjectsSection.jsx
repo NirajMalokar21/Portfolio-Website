@@ -6,11 +6,20 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
+    id: 4,
+    title: "Spring Patient Management System",
+    description: "Built a microservices-based healthcare application using Spring Boot, Spring Cloud, and Spring Security, with gRPC, Kafka, and JWT authentication. Containerized services with Docker & Docker Compose, and provisioned AWS infrastructure (ECS, RDS, MSK, VPC, ALB) via CDK & LocalStack, ensuring scalability, security, and reproducibility.",
+    image: "/images/projects/pmsystem-git-tn.png",
+    tag: ["All", "Spring"],
+    gitUrl: "https://github.com/NirajMalokar21/Patient_Management_System",
+    previewUrl: "",
+  },
+  {
     id: 1,
     title: "Dev Overflow Fullstack Website",
     description: "Responsive full stack stack overflow clone implementing auth, reputation, recommendation algorithm, global and local search. Technologies used: NextJS, Tailwind, MongoDB, Typescript",
     image: "/images/projects/devflow-tn.png",
-    tag: ["All", "FullStack", "Responsive", ],
+    tag: ["All", "Web" ],
     gitUrl: "https://github.com/NirajMalokar21/stack_overflow_nextjs14",
     previewUrl: "https://stack-overflow-nextjs14-eta.vercel.app/",
   },
@@ -19,37 +28,28 @@ const projectsData = [
     title: "IPhone 15 Landing page",
     description: "Responsive front-end application using React and tailwind for design and GSAP for animations.",
     image: "/images/projects/iphone-tn.png",
-    tag: ["All", "Responsive"],
+    tag: ["All", "Web"],
     gitUrl: "https://github.com/NirajMalokar21/Apple-Iphone-Website",
     previewUrl: "https://apple-iphone-website-mu.vercel.app/",
+  },
+  {
+    
+    id: 5,
+    title: "ML Algorithms Repository",
+    description: "A collection of Jupyter notebooks implementing classical ML models (Linear/Logistic Regression, SVM, etc.) with full workflows. Including EDA, preprocessing, training, and evaluation. Using Python (scikit-learn, pandas, matplotlib).",
+    image: "/images/projects/mlAlg-git-tn.png",
+    tag: ["All", "Data Analysis"],
+    gitUrl: "https://github.com/NirajMalokar21/SciKitLearn",
+    previewUrl: "",
   },
   {
     id: 3,
     title: "Modern Landing Page",
     description: "Responsive modern landing page created using NextJS, Tailwind and GSAP.",
     image: "/images/projects/travel-tn.png",
-    tag: ["All", "Responsive"],
+    tag: ["All", "Web"],
     gitUrl: "https://github.com/NirajMalokar21/travela-app",
     previewUrl: "https://travela-app-tau.vercel.app/",
-  },
-  {
-    id: 4,
-    title: "E-Commerce website",
-    description: "Developed an E-Commerce website using the MERN stack, using multer for image storage, render and vercel for deployment. Implemented admin page and admin functionality to add and remove items.",
-    image: "/images/projects/ecomm-portfolio-tn.png",
-    tag: ["All", "FullStack"],
-    gitUrl: "https://github.com/NirajMalokar21/E-Commerce-App",
-    previewUrl: "https://e-commerce-app-three-psi.vercel.app/",
-  },
-  {
-    
-    id: 5,
-    title: "Portfolio Website",
-    description: "Responsive front-end Application showcasing my projects and skills created using NextJS, tailwind, GSAP, and Framer Motion.",
-    image: "/images/projects/portfolio-tn.png",
-    tag: ["All", "Responsive"],
-    gitUrl: "https://github.com/NirajMalokar21/Portfolio-Website",
-    previewUrl: "/",
   },
   {
     id: 6,
@@ -93,13 +93,13 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="FullStack"
-          isSelected={tag === "FullStack"}
+          name="Web"
+          isSelected={tag === "Web"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Responsive"
-          isSelected={tag === "Responsive"}
+          name="Spring"
+          isSelected={tag === "Spring"}
         />
         <ProjectTag
           onClick={handleTagChange}

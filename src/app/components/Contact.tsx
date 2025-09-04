@@ -37,10 +37,10 @@ const Contact: FC = () => {
             try my best to get back to you!
             </p>
             <div className="socials flex flex-row gap-2">
-            <Link href="github.com">
+            <Link href="https://github.com/NirajMalokar21">
                 <Image src='/github-icon.svg' width={40} height={40} alt="Github Icon" className='invert' />
             </Link>
-            <Link href="linkedin.com">
+            <Link href="https://www.linkedin.com/in/niraj-malokar-a09a81224/">
                 <Image src='/linkedin-icon.svg' width={40} height={40} alt="Linkedin Icon" className='invert'/>
             </Link>
             
@@ -58,7 +58,7 @@ const Contact: FC = () => {
                 <input
                 type='text'
                 placeholder='Full Name'
-                className='w-full rounded-md border border-gray-300 bg-primary-100 py-3 px-6 text-base font-medium text-white outline-none focus:border-purple-500 focus:shadow-md'
+                className='w-full rounded-md border border-gray-300 bg-primary-100 py-3 px-6 text-base font-medium text-black outline-none focus:border-purple-500 focus:shadow-md'
                 {...register('name', { required: true })}
                 />
             </div>

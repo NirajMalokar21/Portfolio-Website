@@ -17,40 +17,16 @@ const skillsArray = [
         image: '/images/nextImage.png'
     },
     {
-        name: "TailwindCSS",
-        image: '/images/tailwindImage.png'
-    },
-    {
         name: "Redux",
         image: '/images/reduxImage.png'
     },
     {
-        name: "MongoDB",
-        image: '/images/MongoIcon.png'
+        name: "Wordpress",
+        image: "/images/wordpress-logo.png"
     },
     {
-        name: "SQL",
-        image: '/images/sqlImage.png'
-    },
-    {
-        name: "GitHub",
-        image: '/images/githubImage.png'
-    },
-    {
-        name: "Express",
-        image: '/images/expressIcon.png'
-    },
-    {
-        name: "NodeJS",
-        image: '/images/nodeImage.png'
-    },
-    {
-        name: "Typescript",
-        image: '/images/typescriptImage.png'
-    },
-    {
-        name: "GSAP",
-        image: '/images/gsapImage.png'
+        name: "SKLearn",
+        image: "/images/scikitlearn.png"
     },
     {
         name: "Pandas",
@@ -64,6 +40,39 @@ const skillsArray = [
         name: "Jupyter",
         image: '/images/jupyter.png'
     },
+    {
+        name: "Docker",
+        image: "/images/docker.png"
+    },
+    {
+        name: "GitHub",
+        image: '/images/githubImage.png'
+    },
+    {
+        name: "AWS",
+        image: "/images/aws.png"
+    },
+    {
+        name: "Spring",
+        image: "/images/spring.png"
+    },  
+    {
+        name: "MongoDB",
+        image: '/images/MongoIcon.png'
+    },
+    {
+        name: "SQL",
+        image: '/images/sqlImage.png'
+    },
+    
+    {
+        name: "Express",
+        image: '/images/expressIcon.png'
+    },
+    {
+        name: "GSAP",
+        image: '/images/gsapImage.png'
+    },  
 ]
 
 const Skills = () => {
@@ -85,10 +94,10 @@ const Skills = () => {
 
   return (
     <div className="flex flex-col justify-start items-center bg-[#b2b2db] w-full h-full rounded-2xl max-lg:hidden pb-4">
-        <h2 className="text-4xl font-bold mb-4 py-4">Skills</h2>
-        <div className='flex flex-wrap gap-16 items-center justify-evenly px-8 '>
+        <h2 className="text-4xl font-bold mb-4 pt-4 pb-8">Skills</h2>
+        <div className='flex flex-wrap gap-16 items-center justify-evenly px-6 '>
             {skillsArray.map((skill, i) => (
-                <div key={i} id='skill' className='flex flex-col items-center justify-start px-2'>
+                <div key={i} id='skill' className='flex flex-col items-center justify-evenly px-2'>
                     <Image 
                         src={skill.image}
                         alt='skillPhoto'

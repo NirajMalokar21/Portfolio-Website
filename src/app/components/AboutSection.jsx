@@ -29,9 +29,9 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2 font-medium">
-        <li>3rd Year Computer Science Student</li>
+        <li>4th Year Computer Science Student</li>
         <li>Carleton Unversity, Ottawa</li>
-        <li>GPA: 11.25/12.00</li>
+        <li>GPA: 10.95/12.00</li>
       </ul>
     ),
   },
@@ -42,8 +42,8 @@ const TAB_DATA = [
       <ul className="list-disc pl-2 font-medium">
         <li>Email: <span className="underline text-blue-500">nirajharshavardhanma@cmail.carleton.ca</span></li>
         <li>Employment: Open</li>
-        <li>Availability: May, 2025 - December, 2025</li>
-        <li>Looking for internship opportunities</li>
+        <li>Availability: May 2026 - May 2027</li>
+        <li>Looking for Co-ops and internship learning opportunites</li>
       </ul>
     ),
   },
@@ -87,12 +87,11 @@ const AboutSection = () => {
         <div id="about_me" className="mt-4 md:mt-0 text-left flex flex-col h-full pl-8 opacity-0 translate-x-1/4">
           <h2 className="text-4xl font-bold mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, Next.Js,
-            HTML, CSS, Tailwind and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+            <p className="py-3">I’m an enthusiastic Computer Science student and lifelong learner with a passion for exploring every corner of technology. From web development and application design to data science, AI, and machine learning, I enjoy building interactive, responsive, and intelligent applications that bring ideas to life. </p>
+
+            <p className="pb-3">My experience spans both full-stack web development and data-driven projects, working with tools and frameworks like Next.js, React, Redux, Node.js, Spring Boot, and Express on the development side, and NumPy, Pandas, scikit-learn, and Matplotlib on the data side. I thrive on learning new technologies, experimenting with different problem-solving approaches, and collaborating with others to create impactful solutions.</p>
+
+            <p className="pb-3">Always curious and adaptable, I’m excited to keep pushing my boundaries, whether that means building scalable web apps, training machine learning models, or developing innovative applications at the intersection of multiple fields.</p>
           </p>
           <div className="flex flex-row justify-start mt-8">
             <div className="hidden max-sm:flex">
