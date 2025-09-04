@@ -67,7 +67,7 @@ const HeroSection = () => {
           <h2 className="text-black mb-4 text-xl pb-4 sm:text-2xl lg:text-4xl lg:leading-normal font-extrabold">
             <TypeAnimation
                 sequence={[
-                  "3rd Year C.S Student",
+                  "4th Year C.S Student",
                   1000,
                   "Web Developer",
                   1000,
