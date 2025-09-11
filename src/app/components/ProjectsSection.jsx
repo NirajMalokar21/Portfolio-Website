@@ -24,23 +24,23 @@ const projectsData = [
     previewUrl: "https://stack-overflow-nextjs14-eta.vercel.app/",
   },
   {
+    
     id: 2,
+    title: "Photo Culling App",
+    description: "A Python tool that automatically evaluates and removes low-quality images from any folder, supporting all common formats. I developed and tuned a Gradient Boosting model using hand-crafted features (sharpness, brightness, color stats, entropy, edge density) for accurate image quality ranking. Includes a simple PyQt GUI and is packaged as a standalone desktop app with PyInstaller.",
+    image: "/images/projects/photo-culler-tn.png",
+    tag: ["All", "Data Analysis", "AI/ML"],
+    gitUrl: "https://github.com/NirajMalokar21/CullerAI",
+    previewUrl: "",
+  },
+  {
+    id: 5,
     title: "IPhone 15 Landing page",
     description: "Responsive front-end application using React and tailwind for design and GSAP for animations.",
     image: "/images/projects/iphone-tn.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/NirajMalokar21/Apple-Iphone-Website",
     previewUrl: "https://apple-iphone-website-mu.vercel.app/",
-  },
-  {
-    
-    id: 5,
-    title: "ML Algorithms Repository",
-    description: "A collection of Jupyter notebooks implementing classical ML models (Linear/Logistic Regression, SVM, etc.) with full workflows. Including EDA, preprocessing, training, and evaluation. Using Python (scikit-learn, pandas, matplotlib).",
-    image: "/images/projects/mlAlg-git-tn.png",
-    tag: ["All", "Data Analysis"],
-    gitUrl: "https://github.com/NirajMalokar21/SciKitLearn",
-    previewUrl: "",
   },
   {
     id: 3,
